@@ -8,15 +8,9 @@ body{
     flex-direction: column;
     font-family: 'Roboto Slab', serif;
     background-image: url(gamer-fundo.png);
-    background-size: 100% 100%;
+    background-size: 250% 100%;
 }
 
-/*body img{
-	z-index: -5000;
-	    position: fixed;
-    width: 100vw;
-}
-*/
  .caixa-login{
  	width: 100vw;
     height: 100vh;
@@ -25,12 +19,12 @@ body{
     align-items: center;
     justify-content: space-around;
     font-family: 'Roboto Slab', serif;
-    background-color: #ffffffcf;
+    background-color: #ffffff94;
  }
 
 .login{
-    width: 90vw;
-    height: 100vw;
+    width: 100vw;
+    height: 110vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,9 +43,11 @@ body{
 .botao-entrar button{
     width: 100%;
     height: 7vh;
-    border-radius: 3px;
+    border-radius: 6px;
     background-color: #080113e6;
     color: white;
+    border-color: #ffffff00;
+    box-shadow: 0px 1px 1px 0px;
 }
 
 .inputs{
@@ -64,10 +60,13 @@ body{
 }
 
 .input1, .input2{
-	width: 80%;
-    height: 25%;
-    background-color: #80808012;
-    border-radius: 5%;
+    width: 80%;
+    height: 28%;
+    background-color: #ffffff87;
+    border-radius: 6px;
+    margin: 2px;
+    border-color: #ffffff00;
+    box-shadow: 0px 1px 1px 0px;
 }
 
 .botao-cadastrar{
@@ -89,29 +88,32 @@ body{
 
 
 @media(min-width: 364px){
+    body{
+        background-size: 200% 100%;
+    }
 	.botao-cadastrar{
 	height: 10%;
 	}
 	.login {
-    width: 80vw;
-    height: 80vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        width: 80vw;
+        height: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }  
 }
 
 @media(min-width: 412px){
-	.login {
-    height: 73vw;
+    body{
+        background-size: 175% 100%;
     }
 }
 
-@media(min-width: 619px){
+@media(min-width: 475px){
 	body{
     background-image: url(gamer-fundo.png);
-    background-size: 100% 100%;
+    background-size: 150% 100%;
 	}
 
 	.login {
@@ -123,11 +125,18 @@ body{
     justify-content: center;
     box-shadow: 2px 2px 2px 2px;
     border-radius: 3px;
-    background-color: #ffffffbf;
+    background-color: #ffffff87;
+    border-color: white;
+    box-shadow: 0px 1px 1px 0px;
     }
 
     .botao-entrar{
     	width: 100%;
+    }
+
+    .botao-entrar button {
+        color: white;
+        border-color: #ffffff;
     }
 
     .logo img {
@@ -140,6 +149,10 @@ body{
 }
 
 @media(min-width: 683px){
+    body{
+        background-size: 125% 100%;
+    }
+
 	.logo img {
     width: 26vw;
     }
@@ -162,6 +175,10 @@ body{
 }
 
 @media(min-width: 940px){
+    body{
+        background-size: 100% 100%;
+    }
+
 	.login {
     width: 32vw;
     height: 40vw;
