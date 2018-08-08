@@ -66,8 +66,8 @@ main {
     box-shadow: inset 0 -6px 0px 0 white;
     cursor: pointer;
     transition: 0.3s ease;
-    position: absolute;
-    bottom: 18vh;
+    position: relative;
+    top: 8vh;
 }
 
 button:focus, input:focus {
