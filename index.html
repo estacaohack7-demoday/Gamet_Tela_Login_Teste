@@ -8,25 +8,35 @@
     <title>Gamet</title> 
     <link rel="stylesheet" href="estilo.css">
     <script type="text/javascript" src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 </head>
 <body>
-    <article class="caixa-login">
-        <section class="login">
-            <div class="logo">
-                <img src="logo-gamet.png">
-            </div>
-            <div class="inputs">
-                <input class="input1" type="name" name="usuário" placeholder="Insira o seu nome de usuário">
-                <input class="input2" type="senha" name="senha" placeholder="Insira sua senha">
-            </div>
-            <div class="botao-entrar">
-                <button type="button">Entrar</button>
-            </div>
-        </section>
+
+    <article class="warning">
+        <h2>Este app ainda está em desenvolvimento.</h2>
+        <h3>Antes de fazer a magia acontecer, preparamos uma pré-visualização do Gamet para você.</h3>
+        <a href="http://financacessivel.com">Confira esta demo!</button>
     </article>
 
-    <footer class="botao-cadastrar">
-        <button type="button">Ainda não tem cadastro? Cadastre-se aqui!</button>
-    </footer> 
+    <main>
+        <article class="caixa-login">
+            <section class="login">
+                <img class="logo" src="logo-gamet.png">
+                
+                <div class="inputs">
+                    <input class="input1" type="name" name="usuário" placeholder="Nome de usuário">
+                    <input class="input2" type="password" name="senha" placeholder="Senha">
+                </div>
+
+                <p class="forgot_pass">esqueceu a senha?</p>
+                
+                <button class="botao-entrar" type="button">Entrar</button>
+            </section>
+        </article>
+
+        <footer class="botao-cadastrar">
+            <button type="button">Ainda não possui uma conta? <span style="text-decoration: underline; cursor:pointer;">Cadastre-se</span></button>
+        </footer>
+    </main>
 </body>
 </html>

@@ -1,14 +1,32 @@
 body{
-	margin: 0;
+    margin: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Roboto Slab', serif;
-    background-image: url(gamer-fundo.png);
-    background-size: 250% 100%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    transition:1.5s ease;
+    will-change: filter;
+}
+
+.main_blur {
+    filter:blur(25px);
 }
 
  .caixa-login{
@@ -19,7 +37,7 @@ body{
     align-items: center;
     justify-content: space-around;
     font-family: 'Roboto Slab', serif;
-    background-color: #ffffff94;
+    background-color: rgba(0,0,0,0.82);
  }
 
 .login{
@@ -30,43 +48,73 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'Roboto Slab', serif;
-    background-color: #ffffff00;
 }
 
-.logo img{
-	width: 40vw;
+.logo{
+	width: 20vh;
+    position: absolute;
+    top: 10vh;
 }
 
 .botao-entrar{
-	width: 83%;
+    width: 68vw;
+    height: 9vh;
+    font-size: 4vh;
+    background-color: rgba(255,255,255,0.3);
+    color: #fff;
+    border: none;
+    box-shadow: inset 0 -6px 0px 0 white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    bottom: 21.5vh;
 }
-.botao-entrar button{
-    width: 100%;
-    height: 7vh;
-    border-radius: 6px;
-    background-color: #080113e6;
-    color: white;
-    border-color: #ffffff00;
-    box-shadow: 0px 1px 1px 0px;
+
+button:focus, input:focus {
+    outline: none;
 }
+
+.botao-entrar:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
 
 .inputs{
-	display: flex;
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 68%;
     align-items: center;
     justify-content: center;
-    height: 70%;
 }
 
-.input1, .input2{
-    width: 80%;
-    height: 28%;
-    background-color: #ffffff87;
-    border-radius: 6px;
-    margin: 2px;
-    border-color: #ffffff00;
-    box-shadow: 0px 1px 1px 0px;
+.input1, .input2, .warning a{
+    width: 100%;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 2.5vh;
+    box-shadow: inset 0 0 0px 6px rgba(195, 195, 195, 1);
+    text-align: center;
+    margin-top: 3vh;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.warning a {
+    background: linear-gradient(0deg, #0090D0 56%, #44F);
+    height: 9vh;
+    color: white;
+    font-size: 3vh;
+    box-shadow: inset 0 0 0px 6px deepskyblue;
+    cursor: pointer;
+    line-height: 9vh;
+
+}
+
+.input1, .input2 {
+    background: linear-gradient(0deg, #fff 56%, #888);
+    height: 6vh;
 }
 
 .botao-cadastrar{
@@ -81,13 +129,60 @@ body{
 .botao-cadastrar button{
     width: 100vw;
     height: 100%;
-    background-color: #080113e6;
+    background-color: rgba(8,1,19,0.9);
     color: white;
     border: 0;
+    font-size: 2vh;
+}
+
+.forgot_pass {
+    color: #888;
+    font-size: 2vh;
+    font-family: 'Roboto';
+    cursor: pointer;
+    margin-top: 2vh;
+
+}
+
+.warning {
+    background: rgba(15,155,255,0.6);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    transform: translateY(-100%);
+    transition: 0.5s ease;
+}
+
+.warning_show_up {
+    transform: translateY(0%) !important;
+}
+
+.warning h2 {
+    font-size: 6vh;
+    font-weight: 400;
+}
+
+.warning h3 {
+    font-size: 4vh;
+    font-weight: 400;
+}
+
+.warning h4 {
+    font-size: 4vh;
+    font-weight: 400;
 }
 
 
-@media(min-width: 364px){
+/* @media(min-width: 364px){
     body{
         background-size: 200% 100%;
     }
@@ -198,4 +293,4 @@ body{
     .logo img {
     width: 15vw;
     }
-}
+} */
