@@ -105,7 +105,7 @@ button:focus, input:focus {
     background: linear-gradient(0deg, darkorange 50%, orangered);
     height: 9vh;
     color: white;
-    font-size: 3vh;
+    font-size: 3.5vh;
     box-shadow: inset 0 0 0px 6px rgba(255,255,255,0.3);
     cursor: pointer;
     line-height: 9vh;
@@ -157,7 +157,7 @@ button:focus, input:focus {
     text-align: center;
     padding: 0 50px;
     box-sizing: border-box;
-    transform: translateY(-100%);
+    transform: translateY(-138%);
     transition: 0.5s ease;
 }
 
