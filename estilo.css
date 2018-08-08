@@ -67,7 +67,7 @@ main {
     cursor: pointer;
     transition: 0.3s ease;
     position: absolute;
-    bottom: 21.5vh;
+    bottom: 18vh;
 }
 
 button:focus, input:focus {
