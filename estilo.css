@@ -173,6 +173,7 @@ button:focus, input:focus {
     box-sizing: border-box;
     transform: translateY(-100vh);
     transition: 0.5s ease;
+    z-index: 20;
 }
 
 .warning_show_up {
@@ -219,7 +220,7 @@ button:focus, input:focus {
     right: 0;
     left: 0;
     bottom: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 @media(min-width:900px) {
