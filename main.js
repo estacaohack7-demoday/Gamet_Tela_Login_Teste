@@ -1,7 +1,7 @@
 let fundo = document.querySelector('.background')
 let area = document.querySelector('main')
 let warning = document.querySelector('.warning')
-let click_area = document.querySelector('.caixa-login')
+let click_area = document.querySelector('.inv_div')
 
 
 function warn_appear() {

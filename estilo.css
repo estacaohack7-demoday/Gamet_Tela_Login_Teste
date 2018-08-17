@@ -213,6 +213,39 @@ button:focus, input:focus {
     margin-top: 6vh;
 }
 
+.inv_div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+@media(min-width:900px) {
+    .inputs {
+        width: 25%;
+    }
+
+    .botao-entrar {
+        width: 25%;
+    }
+
+    .warning h2 {
+        font-size: 4vw;
+    }
+
+    .warn_icon {
+        width: 22vh;
+    }
+
+    .warning h3 {
+        text-align: right;
+        width: 60%;
+        position: relative;
+        bottom: 5%;
+    }
+}
 
 /* @media(min-width: 364px){
     body{
